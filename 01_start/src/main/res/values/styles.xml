@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--1透明还是会占用内存-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+        <!--2设置图片或颜色 启动时白屏变为自定义颜色或图片-->
+        <!--        <item name="android:windowBackground">@drawable/ic_launcher_background</item>-->
+        <!--3背景置空，且不需要预览-->
+        <!--缺点：每个activity启动都会走以上的设置-->
+                <item name="android:windowBackground">@null</item>
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+
+        <item name="colorPrimary">@color/alex_color</item>
+        <item name="colorPrimaryDark">@color/shailen_color</item>
+        <item name="colorAccent">@color/joanna_color</item>
+
+    </style>
+
+    <!--单独定义一个主题
+    在manifest 启动的 activity   和activity内设置-->
+    <style name="myTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+</resources>
